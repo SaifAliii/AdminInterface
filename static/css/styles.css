@@ -16,3 +16,20 @@ body {
   height: 50px;
   width: 50px;
 }
+
+.side-navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  height: 500px;
+  width: max-content;
+}
+
+.side-navbar-item {
+  border: 1px solid rgb(102, 101, 101);
+  width: 100px;
+  padding: 25px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+}
