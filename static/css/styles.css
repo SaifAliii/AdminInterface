@@ -1,10 +1,12 @@
 body {
   margin: 0px !important;
+  font-family: "Roboto", sans-serif;
 }
 .top-navbar {
   display: flex;
   flex-direction: row;
-  border: 1px solid rgb(102, 101, 101);
+  /* border: 1px solid rgb(102, 101, 101); */
+  box-shadow: 1px 1px 5px rgb(192, 192, 192);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 25px;
@@ -24,6 +26,7 @@ body {
   height: 500px;
   width: max-content;
   background-color: rgb(241, 241, 241);
+  display: none;
 }
 
 .side-navbar-item {
@@ -36,4 +39,64 @@ body {
   margin-bottom: 10px;
   border-radius: 20px;
   /* box-shadow: 1px 1px 5px black; */
+}
+
+.dashboard-summary {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  left: 30%;
+  top: 20%;
+}
+
+.dashboard-summary-item {
+  width: 250px;
+  text-align: left;
+  font-size: xx-large;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#item1 {
+  background-color: #ffebf1;
+}
+
+#item2 {
+  background-color: #ffefd6;
+}
+
+#item3 {
+  background-color: #cafbe3;
+}
+
+.fa-solid {
+  color: #2270d1;
+}
+
+.dashboard-summary-item-text {
+  color: rgb(183, 167, 167);
+  font-size: large;
+}
+
+/* Charts */
+
+.chart-box {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+}
+
+.chart-box .box {
+  position: relative;
+  background: #222;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+  border-radius: 20px;
 }
