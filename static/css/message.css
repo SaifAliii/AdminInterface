@@ -69,6 +69,7 @@ body-container {
 .all-users {
   width: max-content;
   margin-right: 50px;
+  overflow-y: auto;
 }
 
 .user {
@@ -94,7 +95,7 @@ body-container {
 }
 
 .message-window {
-  width: 100%;
+  width: 90%;
   height: 100vh;
 }
 
@@ -102,7 +103,7 @@ body-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 96%;
   padding: 20px;
   box-shadow: 1px 1px 5px rgb(192, 192, 192);
   border-radius: 12px;
@@ -166,7 +167,7 @@ body-container {
 }
 
 .send-message input[type="text"] {
-  width: 80%;
+  width: 86%;
   border-radius: 12px;
   padding: 12px;
 }
