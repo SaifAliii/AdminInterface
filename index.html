@@ -16,50 +16,68 @@
       src="https://kit.fontawesome.com/d253fd46e4.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Chart Js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.js"></script>
   </head>
   <body>
-    <div class="top-navbar">
-      <h3>Admin Logo</h3>
-      <img class="top-navbar-img" src="static/css/images/User.png" alt="user" />
-    </div>
-    <div class="side-navbar">
-      <div class="side-navbar-item">
-        <a>Dashboard</a>
+    <div class="body-container">
+      <div class="top-navbar">
+        <h3>Admin Logo</h3>
+        <img
+          class="top-navbar-img"
+          src="static/css/images/User.png"
+          alt="user"
+        />
       </div>
-      <div class="side-navbar-item">
-        <a>Task</a>
-      </div>
-      <div class="side-navbar-item">
-        <a>User</a>
-      </div>
-      <div class="side-navbar-item">
-        <a>Messages</a>
-      </div>
-    </div>
-    <div class="dashboard-summary">
-      <div class="dashboard-summary-item" id="item1">
-        <div><i class="fa-solid fa-users"></i></div>
-        <div class="dashboard-summary-item-main-text">
-          <strong>1259</strong>
+      <div class="main-content">
+        <div class="side-navbar">
+          <div class="side-navbar-item">
+            <a href="index.html">Dashboard</a>
+          </div>
+          <div class="side-navbar-item">
+            <a>Task</a>
+          </div>
+          <div class="side-navbar-item">
+            <a href="users.html">User</a>
+          </div>
+          <div class="side-navbar-item">
+            <a href="message.html">Messages</a>
+          </div>
         </div>
-        <div class="dashboard-summary-item-text">Total Users</div>
-      </div>
-      <div class="dashboard-summary-item" id="item2">
-        <div><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
-        <div class="dashboard-summary-item-main-text"><strong>23</strong></div>
-        <div class="dashboard-summary-item-text">Contributors</div>
-      </div>
-      <div class="dashboard-summary-item" id="item3">
-        <div><i class="fa-solid fa-user"></i></div>
-        <div class="dashboard-summary-item-main-text"><strong>123</strong></div>
-        <div class="dashboard-summary-item-text">New Users</div>
+        <div class="main-content-main">
+          <div class="dashboard-summary">
+            <div class="dashboard-summary-item" id="item1">
+              <div><i class="fa-solid fa-users"></i></div>
+              <div class="dashboard-summary-item-main-text">
+                <strong>1259</strong>
+              </div>
+              <div class="dashboard-summary-item-text">Total Users</div>
+            </div>
+            <div class="dashboard-summary-item" id="item2">
+              <div><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+              <div class="dashboard-summary-item-main-text">
+                <strong>23</strong>
+              </div>
+              <div class="dashboard-summary-item-text">Contributors</div>
+            </div>
+            <div class="dashboard-summary-item" id="item3">
+              <div><i class="fa-solid fa-user"></i></div>
+              <div class="dashboard-summary-item-main-text">
+                <strong>123</strong>
+              </div>
+              <div class="dashboard-summary-item-text">New Users</div>
+            </div>
+          </div>
+          <div class="chart-box">
+            <div class="box">
+              <canvas id="chart1"></canvas>
+            </div>
+            <div class="box">
+              <canvas id="chart2"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="chart-box">
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="static/javascript/index.js"></script>
   </body>
 </html>

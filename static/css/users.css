@@ -11,6 +11,7 @@ body-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: max-content;
 }
 
 .top-navbar {
@@ -40,7 +41,7 @@ body-container {
   display: flex;
   flex-direction: column;
   padding: 25px;
-  height: 653px;
+  height: 1070px;
   width: max-content;
   box-shadow: 1px 1px 5px rgb(192, 192, 192);
 }
@@ -60,71 +61,37 @@ body-container {
 .main-content-main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
   padding: 20px;
 }
 
-.dashboard-summary {
+.user {
   display: flex;
   flex-direction: row;
-  width: 90%;
   justify-content: space-between;
-  padding: 20px;
-  /* position: absolute;
-  left: 30%;
-  top: 20%; */
-}
-
-.dashboard-summary-item {
-  width: 250px;
-  text-align: left;
-  font-size: xx-large;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-#item1 {
-  background-color: #ffebf1;
-}
-
-#item2 {
-  background-color: #ffefd6;
-}
-
-#item3 {
-  background-color: #cafbe3;
-}
-
-.fa-solid {
-  color: #2270d1;
-}
-
-.dashboard-summary-item-text {
-  color: rgb(183, 167, 167);
-  font-size: large;
-}
-
-/* Charts */
-
-.chart-box {
-  width: 90%;
-  min-height: 200px;
-  padding: 20px;
-  display: flex;
-}
-
-.chart-box .box {
-  background: #ffffff;
-  padding: 16px;
-  box-shadow: 1px 1px 5px rgb(192, 192, 192);
-  border-radius: 12px;
+  height: max-content;
+  text-align: center;
   width: 100%;
+  padding: 20px;
 }
 
-.chart-box .box:first-child {
-  margin-right: 12px;
+.user span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.chart-box .box canvas {
-  height: 300px;
+.user span button {
+  background-color: rgb(252, 45, 45);
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: none;
+  border-radius: 6px;
+}
+
+.user-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
 }
