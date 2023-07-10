@@ -1,3 +1,4 @@
+/* box-shadow: 1px 1px 5px rgb(192, 192, 192); */
 a {
   text-decoration: none;
   color: black;
@@ -70,16 +71,20 @@ body-container {
   width: max-content;
   margin-right: 50px;
   overflow-y: auto;
+  width: 30%;
+  height: 85vh;
+  box-shadow: 1px 1px 5px rgb(192, 192, 192);
 }
 
 .user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: max-content;
   text-align: center;
   width: 100%;
   padding: 20px;
+  border: none;
+  margin: 12px;
 }
 
 .user span {
@@ -89,9 +94,17 @@ body-container {
 }
 
 .user-img {
-  height: 50px;
-  width: 50px;
+  height: 120px;
+  width: 120px;
   border-radius: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .message-window {
@@ -117,9 +130,10 @@ body-container {
 }
 
 .message-header img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 100%;
+  margin-right: 20px;
 }
 
 .message-header button {
@@ -130,6 +144,12 @@ body-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: x-large;
+}
+
+.message-header-user {
+  display: flex;
+  flex-direction: row;
 }
 
 .message-body {
@@ -167,7 +187,7 @@ body-container {
 }
 
 .send-message input[type="text"] {
-  width: 86%;
+  width: 84%;
   border-radius: 12px;
   padding: 12px;
 }
