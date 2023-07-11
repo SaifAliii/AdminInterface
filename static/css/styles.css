@@ -39,24 +39,20 @@ body-container {
 .side-navbar {
   display: flex;
   flex-direction: column;
-  padding: 25px;
-  height: 653px;
-  width: max-content;
-  box-shadow: 1px 1px 5px rgb(192, 192, 192);
+  padding: 25px 25px 0px 25px;
+  height: 84vh;
+  width: 16%;
 }
 
 .side-navbar-item {
-  /* border: 1px solid rgb(102, 101, 101); */
-  width: 100px;
-  padding-left: 25px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding: 12px 24px;
+  margin: 4px 0px;
   border-radius: 20px;
-  /* box-shadow: 1px 1px 5px black; */
 }
 
+.side-navbar .active {
+  background-color: #d2d2d2;
+}
 .main-content-main {
   display: flex;
   flex-direction: column;
